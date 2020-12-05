@@ -26,4 +26,3 @@ CREATE TABLE role (
 );
 
 
-SELECT * FROM top5000;
