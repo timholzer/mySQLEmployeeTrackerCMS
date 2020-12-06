@@ -40,6 +40,36 @@ function runApp(){
             "Exit"
           ]
         })
+        .then(function(res) {
+            console.log("You entered: " + res.menu);
+            switch (res.menu) {
+              case "View Employees":
+                viewEmployees();
+                break;
+              case "View Roles":
+                viewRoles();
+                break;
+              case "View Departments":
+                viewDepartments();
+                break;
+              case "Add Employee":
+                addEmployee();
+                break;
+              case "Add Role":
+                addRole();
+                break;
+              case "Add Department":
+                addDepartment();
+                break;
+              case "Update Employee":
+                updateEmployee();
+                break;
+              case "Exit":
+                connection.end();
+                break;
+            }
+          });
+      
         
 
 
