@@ -1,5 +1,13 @@
+INSERT INTO employee(first_name, last_name, role_id) 
+VALUES
+('Bob', 'Bobertson', 7),
+('Rob', 'Robertson', 2),
+('Rosan', 'Rosanadana', 3),
+('Steve (developers developers developers)', 'Ballmer', 4),
+('Moni', 'Baggs', 5),
+('Bea', 'Goode', 6);
 
-INSERT INTO departments(department_name)
+INSERT INTO department(department_name)
 VALUES 
 ('Marketing'),
 ('Accounting'),
@@ -7,7 +15,7 @@ VALUES
 ('Human Resources'),
 ('Technology');
 
-INSERT INTO roles(title, salary, department_id)
+INSERT INTO role(title, salary, department_id)
 VALUES
 ('Sales Rep', 32000, 3),
 ('Overpaid Over-promising Salesperson', 172000, 3),
@@ -17,13 +25,4 @@ VALUES
 ('Hiring Manager', 45000, 4)
 ;
 
-INSERT INTO employees(first_name, last_name, role_id) 
-VALUES
-('Bob', 'Bobertson', 1),
-('Rob', 'Robertson', 2),
-('Rosan', 'Rosanadana', 3),
-('Steve (developers developers developers)', 'Ballmer', 4),
-('Moni', 'Baggs', 5),
-('Bea', 'Goode', 6);
-
-UPDATE `employee_db`.`employees` SET `manager_id` = '1' WHERE (`id` > '1');
+UPDATE `employeeDB`.`employee` SET `manager_id` = '1' WHERE (`id` > '1');
