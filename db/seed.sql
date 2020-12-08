@@ -1,6 +1,6 @@
 INSERT INTO employee(first_name, last_name, role_id) 
 VALUES
-('Bob', 'Bobertson', 7),
+('Bob', 'Bobertson', 1),
 ('Rob', 'Robertson', 2),
 ('Rosan', 'Rosanadana', 3),
 ('Steve (developers developers developers)', 'Ballmer', 4),
@@ -25,4 +25,4 @@ VALUES
 ('Hiring Manager', 45000, 4)
 ;
 
-UPDATE `employeeDB`.`employee` SET `manager_id` = '1' WHERE (`id` > '1');
+UPDATE `employeeDB`.`employee` SET `manager_id` = '1' WHERE (`id` >= '1');

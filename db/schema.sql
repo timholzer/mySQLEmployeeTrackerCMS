@@ -9,7 +9,6 @@ CREATE TABLE employee (
   last_name VARCHAR(60),
   role_id INT,
   manager_id INT,
-  year INT NULL,
   PRIMARY KEY (id)
 );
 CREATE TABLE department (
